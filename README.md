@@ -1,1 +1,2 @@
 # rana
+# [الخطة](..thePlan.md)
