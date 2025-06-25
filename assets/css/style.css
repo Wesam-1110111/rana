@@ -1,3 +1,15 @@
+:root{
+    --primary-color:#2ECC71;
+    --secondary-color:#3498DB;
+    --background-color:#F8F9FA;
+    --primary-text-color:#333333;
+    --secondary-text-color:#7F8C8D;
+    --accent-color:#F1C40F;
+}
+
+
+
+
 .logo{
     width: 18%;
     height: 8%;
