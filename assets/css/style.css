@@ -13,8 +13,8 @@
 }
 body{
     font-family: var(--primary-font-family);
-    transition: all 0.3ms;
-    background-image: url("../images/bg-ar.jpg") !important;
+    /* transition: all 0.3ms; */
+    /* background-image: url("../images/bg-ar.jpg") !important; */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -133,4 +133,12 @@ nav{
 .sub-container{
     display: flex;
     flex-flow: column wrap;
+}
+.vertical-container{
+    background-image: url('../images/bg-ar.jpg') !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
 }
