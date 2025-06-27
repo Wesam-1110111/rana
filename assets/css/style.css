@@ -137,7 +137,7 @@ nav{
 .vertical-container{
     background-image: url('../images/bg-ar.jpg') !important;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
     background-position: center;
 
