@@ -25,91 +25,7 @@
 
     <style>
         /* الحاوية الأساسية */
-.vertical-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  /* margin-top: 30px; */
-  /* background-color: #f5f5f5; */
-  
-}
 
-/* حاوية البطل */
-.hero-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* عمودين متساويين */
-  gap: 20px;
-  width: 90%;
-  /* background-color: #b7f3e8; */
-  padding: 20px;
-  border-radius: 10px;
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-}
-
-/* الحاوية الفرعية */
-.sub-container {
-  display: grid;
-  grid-template-rows: 80px 80px 120px; /* 3 صفوف متساوية */
-  gap: 10px;
-  /* background-color: #ffe2a8; */
-  padding: 20px;
-  border-radius: 10px;
-}
-
-/* العناصر النصية */
-.hero-title,
-.hero-text,
-.hero-more-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: #ffd680; */
-  border-radius: 5px;
-  font-size: 1.2rem;
-  /* font-weight: bold; */
-  padding: 10px;
-}
-
-/* صورة البطل */
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* استجابة الشاشة الصغيرة */
-@media (max-width: 768px) {
-  .hero-container {
-    grid-template-columns: 1fr; /* عمود واحد */
-    grid-template-rows: auto auto; /* النصوص أولاً ثم الصورة */
-  }
-
-  .hero-image {
-    margin-top: 20px; /* إضافة مساحة بين النصوص والصورة */
-  }
-  
-}
-  .hero-title{
-    font-size: calc(1.375rem + 1.5vw);
-    color: #3498DB;
-    font-weight: 700;
-    /* margin-bottom: -20pxS; */
-  }
-  .hero-text{
-    font-size: calc(0.8rem + 1.0vw);
-    text-align: center;
-    /* margin-top: -150px; */
-  }
-  .hero-more-text{
-    border: none;
-    border-radius: 15px;
-    background-color: rgb(240, 240, 241);
-    /* margin-top: -50px; */
-    /* padding: auto; */
-    text-align: center;
-  }
 
     </style>
 </head>
@@ -166,6 +82,8 @@
         </div>
         <div class="hero-text">
           حقق أهدافك التسويقية من خلال خدمات دعاية وإعلان أونلاين إحترافية.
+        </div>
+        <div class="">
         </div>
         <div class="hero-more-text">
           "التسويق هو فن جذب العملاء بذكاء وإبقائهم معك للأبد." <br>- فيليب كوتلر
