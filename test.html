@@ -25,7 +25,32 @@
 
     <style>
         /* الحاوية الأساسية */
+       .changing-text-container {
+  font-size: calc(1rem + 1vw);
+  font-weight: 600;
+  color: var(--primary-text-color);
+  margin-top: 15px;
+}
 
+.changing-text-container .static-text {
+  color: var(--secondary-color);
+}
+
+.dynamic-word {
+  color: var(--accent-color);
+}
+
+.slider-container {
+  margin-top: 20px;
+}
+
+.slider-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  height: auto;
+}
+        
 
     </style>
 </head>
@@ -104,6 +129,34 @@
     </div>
   </div>
   
-      
+      <script>
+  const words = ["تصميم إعلاني؟", "هوية بصرية؟", "حملة ممولة؟"];
+  let wordIndex = 0;
+  const wordEl = document.getElementById("changing-word");
+
+  function rotateWord() {
+    wordEl.textContent = words[wordIndex];
+    wordIndex = (wordIndex + 1) % words.length;
+  }
+
+  rotateWord();
+  setInterval(rotateWord, 1000);
+
+  const images = [
+    "assets/images/slider1.jpg",
+    "assets/images/slider2.jpg",
+    "assets/images/slider3.jpg"
+  ];
+  let imgIndex = 0;
+  const imgEl = document.getElementById("slideshow");
+
+  function rotateImage() {
+    imgEl.src = images[imgIndex];
+    imgIndex = (imgIndex + 1) % images.length;
+  }
+
+  setInterval(rotateImage, 1000);
+      </script>
+    
 </body>
 </html>
