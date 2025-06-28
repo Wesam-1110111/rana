@@ -50,113 +50,187 @@
   border-radius: 10px;
   height: auto;
 }
-        
+.dynamic-word {
+  color: var(--accent-color);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.dynamic-word.show {
+  opacity: 1;
+}
+
+.slider-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  height: auto;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+    
 
     </style>
 </head>
 <body dir="rtl">
 
   <!-- //////////////////////////////////////////// -->
-<!-- Navbar start -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <!-- logo -->
-    <a class="navbar-brand" href="index.html" dir="ltr"><img class="logo" dir="ltr" src="assets/images/logo-1.png" alt=""></a>
-    
-    <!-- menu btn --> 
-  <label class="burger navbar-toggler" for="burger" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <input type="checkbox" id="burger">
-      <span></span>
-      <span></span>
-      <span></span>
-  </label>
-  
-    <!-- the menu -->
-    <div class="collapse navbar-collapse navbar-menu" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="servives.html">الخدمات</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">معرض الأعمال</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">تواصل معنا</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- navbar end -->
-  <!-- /////////////////////////////////////////// -->
-
-
-
-
-
-
-
-  <div class="vertical-container">
-    <div class="hero-container">
-      <div class="sub-container">
-        <div class="hero-title">
-          رنــا للدعاية والإعلان
+  <!-- super hero -->
+<div class="bg-test">
+  <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- logo -->
+          <a class="navbar-brand" href="index.html" dir="ltr"><img class="logo" dir="ltr" src="assets/images/logo-1.png" alt=""></a>
+          
+          <!-- menu btn --> 
+        <label class="burger navbar-toggler" for="burger" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <input type="checkbox" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+          <!-- the menu -->
+          <div class="collapse navbar-collapse navbar-menu" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servives.html">الخدمات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">معرض الأعمال</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">تواصل معنا</a>
+              </li>
+            </ul>
+          </div>
         </div>
-          <div class="changing-text-container text-center">
-  <span class="static-text">هل تبحث عن </span>
-  <span id="changing-word" class="dynamic-word"></span>
+      </nav>
+    <!-- navbar end -->
+
+    <!-- hero section start -->
+    <div class="vertical-container">
+      <div class="hero-container">
+        <div class="sub-container">
+          <div class="hero-title">
+            رنــا للدعاية والإعلان
+          </div>
+          <div class="hero-text">
+            حقق أهدافك التسويقية من خلال خدمات دعاية وإعلان أونلاين إحترافية.
           </div>
           
-        <div class="hero-text">
-          حقق أهدافك التسويقية من خلال خدمات دعاية وإعلان أونلاين إحترافية.
+          <div class="hero-more-text">
+            "التسويق هو فن جذب العملاء بذكاء وإبقائهم معك للأبد." <br>- فيليب كوتلر
+          </div>
+          <div class="hero-button-container text-center">
+            <a href="servives.html" class="fancy-button-soft">أطلب خدمتك الآن</a>
+          </div>
         </div>
-        <div class="">
-        </div>
-        <div class="hero-more-text">
-          "التسويق هو فن جذب العملاء بذكاء وإبقائهم معك للأبد." <br>- فيليب كوتلر
+        <div class="hero-image">
+          <img src="assets/images/Marketing-rafiki.svg" alt="Hero Image">
         </div>
       </div>
-      <div class="hero-image">
-        <img src="assets/images/Marketing-rafiki.svg" alt="Hero Image">
-      </div>
-        <div class="slider-container text-center">
-  <img id="slideshow" class="slider-image" src="assets/images/slider1.jpg" alt="عرض شرائح">
-        </div>
-        
     </div>
+    <!-- end hero section -->
   </div>
+  <!-- end super hero -->
+
+  <!-- features section -->
+  <section class="features-strip">
+    <div class="feature-box">
+      <img src="assets/images/features/call-centre.png" alt="دعم" />
+      <h3>دعم 24/7</h3>
+      <p>دائماً في إنتظار تواصلك</p>
+    </div>
+    <div class="feature-box">
+      <img src="assets/images/check.png" alt="دفع آمن" />
+      <h3>وسائل دفع آمنة</h3>
+      <p>متاح أكثر من طريقة دفع آمنة</p>
+    </div>
+    <div class="feature-box">
+      <img src="assets/images/features/on-time.png" alt="تسليم في الموعد" />
+      <h3>إستلام بالموعد</h3>
+      <p>لا تستلم خدماتك إلا وأنت راضٍ</p>
+    </div>
+    <div class="feature-box">
+      <img src="assets/images/features/ribbon.png" alt="خدمات إحترافية" />
+      <h3>خدمات إحترافية</h3>
+      <p>متخصصون دعاية وتسويق</p>
+    </div>
+  </section>
+  <!-- end features section -->
+
+  <div class="changing-text-container text-center">
+    <span class="static-text">هل تبحث عن </span>
+    <span id="changing-word" class="dynamic-word"></span>
+</div>
+
+<div class="slider-container text-center">
+    <img id="slideshow" class="slider-image" src="assets/images/slider1.jpg" alt="عرض شرائح">
+          </div>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+
+  <!-- js -->
+  <script>
+    // نص متغير بتأثير سلس
+    const words = ["تصميم إعلاني؟", "هوية بصرية؟", "حملة ممولة؟"];
+    let wordIndex = 0;
+    const wordEl = document.getElementById("changing-word");
   
-      <script>
-  const words = ["تصميم إعلاني؟", "هوية بصرية؟", "حملة ممولة؟"];
-  let wordIndex = 0;
-  const wordEl = document.getElementById("changing-word");
-
-  function rotateWord() {
-    wordEl.textContent = words[wordIndex];
-    wordIndex = (wordIndex + 1) % words.length;
-  }
-
-  rotateWord();
-  setInterval(rotateWord, 1000);
-
-  const images = [
-    "assets/images/slider1.jpg",
-    "assets/images/slider2.jpg",
-    "assets/images/slider3.jpg"
-  ];
-  let imgIndex = 0;
-  const imgEl = document.getElementById("slideshow");
-
-  function rotateImage() {
-    imgEl.src = images[imgIndex];
-    imgIndex = (imgIndex + 1) % images.length;
-  }
-
-  setInterval(rotateImage, 1000);
-      </script>
+    function rotateWord() {
+      wordEl.classList.remove("show");
+      setTimeout(() => {
+        wordEl.textContent = words[wordIndex];
+        wordEl.classList.add("show");
+        wordIndex = (wordIndex + 1) % words.length;
+      }, 300);
+    }
+  
+    rotateWord();
+    setInterval(rotateWord, 2000); // كل كلمتين في 2 ثانية (تعديل بسيط)
+  
+    // عرض الصور بتأثير سلاسة
+    const images = [
+      "assets/images/e-m.jpg",
+      "assets/images/w-c.jpg",
+      "assets/images/w-d.png"
+    ];
+    let imgIndex = 0;
+    const imgEl = document.getElementById("slideshow");
+  
+    function rotateImage() {
+      imgEl.style.opacity = 0;
+      setTimeout(() => {
+        imgEl.src = images[imgIndex];
+        imgEl.style.opacity = 1;
+        imgIndex = (imgIndex + 1) % images.length;
+      }, 300);
+    }
+  
+    setInterval(rotateImage, 2000);
+  </script>
+  <script src="assets/js/script.js"></script>
+  
     
 </body>
 </html>
