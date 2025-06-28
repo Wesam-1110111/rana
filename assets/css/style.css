@@ -134,7 +134,7 @@ nav{
   /* الحاوية الفرعية */
   .sub-container {
     display: grid;
-    grid-template-rows: 80px 80px 50px 120px; /* 3 صفوف متساوية */
+    grid-template-rows: 80px 80px 120px 50px; /* 3 صفوف متساوية */
     gap: 10px;
     /* background-color: #ffe2a8; */
     padding: 20px;
@@ -223,3 +223,25 @@ nav{
           background-color: #F8F9FA !important;
         }
       }
+      /* hero btn */
+      .fancy-button-soft {
+        background: linear-gradient(135deg, #76b4ea, #a398ec); /* ألوان مستوحاة من الخلفية */
+        color: #ffffff;
+        padding: 14px 30px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 30px;
+        text-decoration: none;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        display: inline-block;
+        backdrop-filter: blur(6px);
+      }
+      
+      .fancy-button-soft:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        background: linear-gradient(135deg, #c3bbf9, #91c4f2);
+      }
+      
