@@ -101,7 +101,7 @@ nav{
     align-items: center;
     height: 100vh;
     /* background-image: url('../images/bg-ar.jpg') !important; */
-    background-image: url('../images/bg-auto.jpg') !important;
+    /* background-image: url('../images/bg-auto.jpg') !important; */
       background-repeat: no-repeat;
       /* background-attachment: fixed; */
       background-size: cover;
@@ -110,7 +110,15 @@ nav{
     /* background-color: #f5f5f5; */
     
   }
-  
+  .bg-test{
+    background-image: url('../images/bg-auto.jpg') !important;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center;
+
+  }
   /* حاوية البطل */
   .hero-container {
     display: grid;
@@ -164,6 +172,11 @@ nav{
   
     .hero-image {
       margin-top: 20px; /* إضافة مساحة بين النصوص والصورة */
+    }
+    .vertical-container{
+      padding-top: 80px;
+      height: auto;
+      min-height: calc(100vh - 80px);
     }
     
   }
