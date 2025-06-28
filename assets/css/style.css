@@ -239,7 +239,7 @@ nav{
         box-shadow: 0 6px 15px rgba(0,0,0,0.1);
         transition: all 0.3s ease;
         display: inline-block;
-        backdrop-filter: blur(6px);
+        /* backdrop-filter: blur(6px); */
       }
       
       .fancy-button-soft:hover {
