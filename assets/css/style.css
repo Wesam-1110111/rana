@@ -180,6 +180,7 @@ nav{
     }
     
   }
+  
     .hero-title{
       font-size: calc(1.375rem + 1.5vw);
       color: #3498DB;
@@ -216,4 +217,9 @@ nav{
       .navbar.scrolled {
         background-color: #f5fafe !important;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+      }
+      @media (max-width: 991px){
+        .navbar{
+          background-color: #F8F9FA !important;
+        }
       }
