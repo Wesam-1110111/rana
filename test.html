@@ -69,9 +69,78 @@
   transition: opacity 0.5s ease-in-out;
   opacity: 1;
 }
-    
+.dynamic-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px); /* يبدأ من تحت */
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.dynamic-word.show {
+  opacity: 1;
+  transform: translateY(0); /* يصعد لأعلى مكانه */
+}
+
+.slide{
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.custom-slider img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.services-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: linear-gradient(135deg, #ecf2ff, #f7f4ff);
+  padding: 40px 10px;
+  border-radius: 12px;
+  margin: 30px auto;
+  width: 90%;
+  gap: 20px;
+  text-align: center;
+}
+
+.service-card {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+  flex: 1 1 280px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+.service-card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: var(--secondary-text-color);
+  font-size: 0.95rem;
+}
 
     </style>
+
+
 </head>
 <body dir="rtl">
 
@@ -148,68 +217,116 @@
       <h3>دعم 24/7</h3>
       <p>دائماً في إنتظار تواصلك</p>
     </div>
-    <div class="feature-box">
+    <!-- <div class="feature-box">
       <img src="assets/images/check.png" alt="دفع آمن" />
       <h3>وسائل دفع آمنة</h3>
       <p>متاح أكثر من طريقة دفع آمنة</p>
-    </div>
+    </div> -->
     <div class="feature-box">
-      <img src="assets/images/features/on-time.png" alt="تسليم في الموعد" />
+      <img src="assets/images/features/on-time-2.png" alt="تسليم في الموعد" />
       <h3>إستلام بالموعد</h3>
       <p>لا تستلم خدماتك إلا وأنت راضٍ</p>
     </div>
     <div class="feature-box">
-      <img src="assets/images/features/ribbon.png" alt="خدمات إحترافية" />
+      <img src="assets/images/features/ribbon-2.png" alt="خدمات إحترافية" />
       <h3>خدمات إحترافية</h3>
       <p>متخصصون دعاية وتسويق</p>
     </div>
   </section>
   <!-- end features section -->
 
-  <div class="changing-text-container text-center">
-    <span class="static-text">هل تبحث عن </span>
-    <span id="changing-word" class="dynamic-word"></span>
-</div>
+  <!-- slider img -->
+  <div id="ranaCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/slider/1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/slider/2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/slider/3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+  
+  <section class="services-strip">
+    <div class="service-card">
+      <img src="assets/images/graphic-icon.svg" alt="خدمات تصميم">
+      <h3>خدمات التصميم</h3>
+      <p>تصاميم احترافية لهوية علامتك بأسلوب عصري</p>
+    </div>
+    <div class="service-card">
+      <img src="assets/images/print-icon.svg" alt="خدمات طباعة">
+      <h3>خدمات الطباعة</h3>
+      <p>جودة عالية لجميع أنواع المطبوعات والتغليف</p>
+    </div>
+    <div class="service-card">
+      <img src="assets/images/ads-icon.svg" alt="حملات إعلانية">
+      <h3>إعلانات مدفوعة</h3>
+      <p>نصمم ونطلق حملاتك بدقة لتصل لأفضل جمهور</p>
+    </div>
+  </section>
+  
 
-  <!-- <div class="slider-container text-center">
-    <img id="slideshow" class="slider-image" src="assets/images/slider1.jpg" alt="عرض شرائح">
-  </div> -->
+  <!-- body -->
+  <div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+  </div>
 
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing. <br></p>
+  <div class="custom-slider">
+    <img id="customSlide" src="assets/images/slider/1.png" alt="slide" />
+  </div>
+  
+  <script>
+    const customImages = [
+      "assets/images/slider/1.png",
+      "assets/images/slider/2.jpg",
+      "assets/images/slider/3.jpg"
+    ];
+    let i = 0;
+    const slide = document.getElementById("customSlide");
+  
+    setInterval(() => {
+      i = (i + 1) % customImages.length;
+      slide.src = customImages[i];
+    }, 3000);
+  </script>
+  
 
   <!-- js -->
   <script>
     // نص متغير بتأثير سلس
-    const words = ["تصميم إعلاني؟", "هوية بصرية؟", "حملة ممولة؟", "والمزيد..", "تصوير إحترافي؟", "كتابة محتوى؟"];
+    const words = ["تصميم إعلاني؟", "هوية بصرية؟", "حملة ممولة؟", "موقع إلكتروني؟", "تصوير إحترافي؟", "كتابة محتوى؟"];
     let wordIndex = 0;
-    const wordEl = document.getElementById("changing-word");
-  
-    function rotateWord() {
-      wordEl.classList.remove("show");
-      setTimeout(() => {
-        wordEl.textContent = words[wordIndex];
-        wordEl.classList.add("show");
-        wordIndex = (wordIndex + 1) % words.length;
-      }, 300);
-    }
-  
-    rotateWord();
-    setInterval(rotateWord, 2000); // كل كلمتين في 2 ثانية (تعديل بسيط)
+  const wordEl = document.getElementById("changing-word");
+
+  function rotateWord() {
+    wordEl.classList.remove("show");
+    setTimeout(() => {
+      wordEl.textContent = words[wordIndex];
+      wordEl.classList.add("show");
+      wordIndex = (wordIndex + 1) % words.length;
+    }, 300);
+  }
+
+  rotateWord();
+  setInterval(rotateWord, 2000); // كل كلمتين في 2 ثانية (تعديل بسيط)
   
     // عرض الصور بتأثير سلاسة
     const images = [
@@ -231,6 +348,8 @@
   
     setInterval(rotateImage, 2000);
   </script>
+
+  <!-- js link -->
   <script src="assets/js/script.js"></script>
   
     
