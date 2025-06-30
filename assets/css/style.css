@@ -4,7 +4,8 @@
     --background-color:#F8F9FA;
     --primary-text-color:#333333;
     --secondary-text-color:#7F8C8D;
-    --accent-color:#F1C40F;
+    --default-color: #333333;
+    --accent-color:#7067a5;
     --primary-font-family: 'Tajawal', sans-serif;
     --primary-font-size: 25px;
 }
@@ -293,4 +294,133 @@ nav{
         color: var(--secondary-text-color);
         font-size: 0.95rem;
       }
+      /* footer */
+      .footer {
+        color: var(--default-color);
+        background-color: var(--background-color);
+        font-size: 14px;
+        text-align: center;
+        padding: 30px 0;
+        position: relative;
+      }
       
+      .footer h3 {
+        font-size: 36px;
+        font-weight: 700;
+        position: relative;
+        padding: 0;
+        margin: 0 0 15px 0;
+      }
+      
+      .footer p {
+        font-size: 15;
+        font-style: italic;
+        padding: 0;
+        margin: 0 0 30px 0;
+      }
+      
+      .footer .social-links {
+        margin: 0 0 30px 0;
+      }
+      
+      .footer .social-links a {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--accent-color);
+        color: var(--contrast-color);
+        line-height: 1;
+        margin: 0 4px;
+        border-radius: 50%;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+        transition: 0.3s;
+      }
+      
+      .footer .social-links a:hover {
+        background: color-mix(in srgb, var(--accent-color), transparent 20%);
+        text-decoration: none;
+      }
+      
+      .footer .copyright {
+        padding-top: 25px;
+        border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+      }
+      
+      .footer .credits {
+        font-size: 13px;
+        padding-top: 5px;
+      }
+      /*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: var(--contrast-color);
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 15px;
+}
+/*--------------------------------------------------------------
+# Stats Section
+--------------------------------------------------------------*/
+.stats i {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  width: 54px;
+  height: 54px;
+  font-size: 24px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.stats .stats-item {
+  margin-top: 10px !important;
+  width: 100% !important;
+  position: relative !important;
+  text-align: center !important;
+  z-index: 0 !important;
+}
+
+.stats .stats-item span {
+  font-size: 36px !important;
+  display: block !important;
+  font-weight: 700 !important;
+  color: color-mix(in srgb, var(--default-color), transparent 20%) !important;
+}
+
+.stats .stats-item p {
+  padding: 0;
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 16px;
+}
