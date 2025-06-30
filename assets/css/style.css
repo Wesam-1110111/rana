@@ -8,6 +8,7 @@
     --accent-color:#7067a5;
     --primary-font-family: 'Tajawal', sans-serif;
     --primary-font-size: 25px;
+    --contrast-color: #fff;
 }
 *{
     font-family: var(--primary-font-family);
