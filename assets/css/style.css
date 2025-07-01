@@ -854,3 +854,13 @@ test styles
   transform: translateY(0); /* يصعد لأعلى مكانه */
 }
 
+.go-services-btn{
+  margin-top: 50px;
+}
+.bi-zoom-in{
+  margin-right: 245px;
+}
+
+.bi-link-45deg{
+  margin-right: 245px;
+}
