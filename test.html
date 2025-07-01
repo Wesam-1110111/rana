@@ -30,55 +30,11 @@
     <link href="resources/tnt old_version/assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="resources/tnt old_version/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="resources/tnt old_version/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    
-    <style>
-        /* الحاوية الأساسية */
-       .changing-text-container {
-  font-size: calc(1rem + 1vw);
-  font-weight: 600;
-  color: var(--primary-text-color);
-  margin-top: 15px;
-}
-
-.changing-text-container .static-text {
-  color: var(--secondary-color);
-}
-
-.dynamic-word {
-  /* color: var(--accent-color); */
-  color: purple;
-}
-
-.dynamic-word {
-  color: purple;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.dynamic-word.show {
-  opacity: 1;
-}
-
-.dynamic-word {
-  display: inline-block;
-  opacity: 0;
-  transform: translateY(10px); /* يبدأ من تحت */
-  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
-}
-
-.dynamic-word.show {
-  opacity: 1;
-  transform: translateY(0); /* يصعد لأعلى مكانه */
-}
-
-
-    </style>
 
 
 </head>
 <body dir="rtl">
 
-  <!-- //////////////////////////////////////////// -->
   <!-- super hero -->
 <div class="bg-test">
   <!-- Navbar start -->
@@ -102,7 +58,7 @@
                 <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="page/servives.html">الخدمات</a>
+                <a class="nav-link" href="page/services.html">الخدمات</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="page/portfolio.html">معرض الأعمال</a>
@@ -132,7 +88,7 @@
             <span id="changing-word" class="dynamic-word"></span>
         </div>
           <div class="hero-button-container text-center">
-            <a href="servives.html" class="fancy-button-soft">أطلب خدمتك الآن</a>
+            <a href="services.html" class="fancy-button-soft">أطلب خدمتك الآن</a>
           </div>
         </div>
         <div class="hero-image">
@@ -187,7 +143,7 @@
         <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
           <i class="bi bi-emoji-smile"></i>
           <div class="stats-item">
-            <span data-purecounter-start="0" data-purecounter-end="37" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="39" data-purecounter-duration="1" class="purecounter"></span>
             <p>عملاء راضين</p>
           </div>
         </div><!-- End Stats Item -->
@@ -235,41 +191,42 @@
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">الكل</li>
             <li data-filter=".filter-app">التصوير</li>
             <li data-filter=".filter-product">التصميم</li>
             <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
+          </ul> -->
+          <!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="resources/tnt old_version/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
+              <img src="assets/images/portfolio/6.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 1</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="resources/tnt old_version/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/images/portfolio/6.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="resources/tnt old_version/assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="assets/images/portfolio/7.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Product 1</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="resources/tnt old_version/assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/images/portfolio/2.png" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="resources/tnt old_version/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+              <img src="assets/images/portfolio/3.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Branding 1</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="resources/tnt old_version/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/images/portfolio/3.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->

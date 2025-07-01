@@ -655,6 +655,9 @@ nav{
   fill: #f3268c;
 }
 
+.img-fluid{
+  border-radius: 16px;
+}
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
@@ -810,5 +813,44 @@ section,
 }
 
 /* *********************
-test++
+test styles
 **********************/
+/* الحاوية الأساسية */
+.changing-text-container {
+  font-size: calc(1rem + 1vw);
+  font-weight: 600;
+  color: var(--primary-text-color);
+  margin-top: 15px;
+}
+
+.changing-text-container .static-text {
+  color: var(--secondary-color);
+}
+
+.dynamic-word {
+  /* color: var(--accent-color); */
+  color: purple;
+}
+
+.dynamic-word {
+  color: purple;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.dynamic-word.show {
+  opacity: 1;
+}
+
+.dynamic-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px); /* يبدأ من تحت */
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.dynamic-word.show {
+  opacity: 1;
+  transform: translateY(0); /* يصعد لأعلى مكانه */
+}
+
