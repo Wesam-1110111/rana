@@ -865,3 +865,13 @@ test styles
 .bi-link-45deg{
   margin-right: 245px;
 }
+
+.service-item-img {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-item-img:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
